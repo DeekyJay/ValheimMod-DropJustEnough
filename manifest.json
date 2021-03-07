@@ -1,0 +1,9 @@
+{
+    "name": "DropJustEnough",
+    "description": "Encumbered? Alt + Click a stack of items to drop just enough so you're no longer encumbered!",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/DeekyJay/ValheimMod-DropJustEnough",
+    "dependencies": [
+      "denikson-BepInExPack_Valheim-5.4.700"
+    ]
+}
