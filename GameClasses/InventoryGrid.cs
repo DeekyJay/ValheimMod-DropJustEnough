@@ -27,6 +27,12 @@
             var singleItemWeight = totalItemWeight / item.m_stack;
             var maxCarryWeight = Player.m_localPlayer.GetMaxCarryWeight();
             var weightToRemove = totalWeight - maxCarryWeight;
+
+            if (totalWeight < maxCarryWeight)
+            {
+                return false;
+            }
+
             var howManyToRemove = totalItemWeight > weightToRemove ? (int)Math.Ceiling(weightToRemove / singleItemWeight) : item.m_stack;
             return Player.m_localPlayer.DropItem(inventory, item, howManyToRemove);
         }
